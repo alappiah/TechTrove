@@ -56,7 +56,6 @@
 
 - **Live Application URL**: [Tech Trove](http://169.239.251.102:3341/~alvin.appiah/TechTrove/)  
 - **GitHub Repository**: [Tech Trove on GitHub](https://github.com/alappiah/TechTrove)  
-- **Database Schema and Sample Data**: [Link to SQL File](#)  
 
 ---
 
