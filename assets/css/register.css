@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #D7CEB2;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px 0;
+}
+
+.main .register-container{
+    position: relative;
+    width: 440px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.register-container h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.register-container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 20px;
+}
+
+.input-box label, .name-container .input-box label{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.input-box .icon{
+    color: #fff;
+    margin-left: 15px;
+}
+
+.remember-forgot label{
+    color: white;
+}
+
+.remember-forgot {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+    align-items: flex-start;
+}
+
+.register-container .register-button{
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+.register-container .register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+    
+}
+    
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.name-container {
+    display: flex;
+    gap: 20px; 
+    margin-top: 10px;
+}
+
+.name-container .input-box {
+    flex: 1;
+    margin: 0; 
+}
+
+.name-container .input-box label{
+    margin-left: 20px;
+}
+
+form .error-message-email, form .error-message-password{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+
+

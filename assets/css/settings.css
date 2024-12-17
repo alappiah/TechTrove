@@ -1,0 +1,228 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px;
+    z-index: 1000;
+    background-color: #ffffff; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header a {
+    text-decoration: none;
+    color: #333333; /* Dark text color */
+    font-size: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.header a:hover {
+    color: #f39c12; /* Highlight color for hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.header ion-icon {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #333333; /* Icon matches text color */
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.main-content {
+    grid-area: 1 / 2 / auto / 6;
+    margin-left: 30px;
+    gap: 30px;
+}
+
+/* Navigation */
+.sidebar {
+    grid-area: 1 / 1 / 8 / 2;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar ul li a.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.save-button {
+    border-radius: 5px;
+    background: #1E3E71;
+    color: white;
+    width: auto;
+    padding: 8px;
+    margin-bottom: 20px;
+
+}
+
+
+.section-content {
+    display: none;
+}
+
+.section-content.active {
+    display: block;
+}
+
+
+
+.form-group label {
+    display: block;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Dark Mode  Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Dark Mode */
+.dark-mode .header {
+    background-color: #333333; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); 
+}
+
+.dark-mode .header a {
+    color: #ffffff;
+}
+
+.dark-mode .header a:hover, .dark-mode .header ion-icon {
+    color: #f39c12; 
+}
+
+.dark-mode .header ion-icon {
+    color: #ffffff; 
+}
+
+
+.dark-mode .parent {
+    background-color: #1E1E1E;
+}
+
+
+.dark-mode .sidebar {
+    border-right-color: #444;
+}
+
+.dark-mode .sidebar ul li a {
+    color: #e0e0e0;
+}
+
+.dark-mode .sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.dark-mode .sidebar ul li a.active {
+    background-color: #444;
+    color: #fff;
+}
+
+
+.dark-mode .content h2 {
+    color: #e0e0e0;
+}
+
+
+.dark-mode .form-group label {
+    color: #e0e0e0;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea,
+.dark-mode .form-group select {
+    background-color: #2C2C2C;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+
+.dark-mode .save-button {
+    background: #2E5E91;
+}
+
+
+.dark-mode a {
+    color: #4A90E2;
+}
+
+.dark-mode a:hover {
+    color: #6AB0FF;
+}

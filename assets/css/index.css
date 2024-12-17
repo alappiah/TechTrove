@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+}
+
+.main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 100px 0;
+}
+
+.main .content{
+  max-width: 600px;
+  color: #fff;
+
+}
+
+.content h2{
+  font-size: 2em;
+  letter-spacing: .03em;
+}
+
+.content p{
+  margin: 10px 0 40px;
+}
+
+.content a{
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 50px;
+  transition: .5s;
+}
+
+.content a:hover{
+  background-color: #DDA77B;
+}
+
+.main .login-container{
+  position: relative;
+  width: 440px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.login-container h2{
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.login-container .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 40px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 40px;
+  font-size: 1em;
+  color: #fff;
+  padding: 20px;
+}
+
+.input-box label{
+  color: #fff;
+  margin-left: 5px;
+}
+
+.input-box .icon{
+  color: #fff;
+  margin-left: 15px;
+}
+
+.remember-forgot label{
+  color: white;
+}
+
+.remember-forgot {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.remember-forgot a {
+  color: white;
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.login-container .login-button{
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+}
+
+.login-container .register-link {
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0;
+  
+}
+  
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight:600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+  font-size: .8em;
+  top: -14px;
+  left: 17px;
+}
+
+form .error-message-email, form .error-message-password{
+  color: red;
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+/* Responsive styling for tablets and mobile */
+@media (max-width: 768px) {
+  .header {
+      padding: 20px 20px;
+      
+      
+  }
+
+  .header .logo{
+      position: fixed;
+  }
+
+  .main {
+      padding: 60px 20px;
+      flex-direction: column;
+  }
+
+  .content h2 {
+      font-size: 1.5em;
+  }
+
+  .content p {
+      font-size: 0.95em;
+      margin-bottom: 20px;
+  }
+
+  .content a {
+      padding: 8px 25px;
+      font-size: 0.9em;
+  }
+
+  .login-container {
+      margin-top: 50px;
+      max-width: 100%;
+      padding: 20px;
+  }
+
+  .login-container h2 {
+      font-size: 1.5em;
+  }
+
+  .input-box input {
+      padding: 15px;
+      font-size: 0.95em;
+  }
+
+  .login-container .login-button {
+      height: 45px;
+      font-size: 0.95em;
+  }
+
+  .register-link p {
+      font-size: 0.85em;
+  }
+}
+
+
+
+/* Responsive styling for laptops/desktops */
+@media (min-width: 1440px) {
+  .header {
+      padding: 20px 150px;
+  }
+
+  .main {
+      padding: 100px 150px;
+      justify-content: space-between; /* Space out content */
+  }
+
+  .content h2 {
+      font-size: 2.5em;
+  }
+
+  .content p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+  }
+
+  .content a {
+      padding: 12px 50px;
+      font-size: 1.1em;
+  }
+
+  .login-container {
+      width: 500px;
+      padding: 30px;
+      max-width: 100%;
+  }
+
+  .login-container h2 {
+      font-size: 2.2em;
+  }
+
+  .input-box input {
+      padding: 22px;
+      font-size: 1.1em;
+  }
+
+  .login-container .login-button {
+      height: 55px;
+      font-size: 1.1em;
+  }
+
+  .register-link p {
+      font-size: 1em;
+  }
+}
